@@ -77,7 +77,7 @@ CREATE TABLE region (
 
 -- ================================================================
 -- USERACCT
--- Represents user accounts 
+-- Represents user accounts
 -- u_id             User ID
 -- u_firstname      User's first name
 -- u_lastname       User's last name
@@ -120,7 +120,7 @@ CREATE INDEX idx_useracct_region ON useracct (u_id, u_r_id);
 
 -- ================================================================
 -- USERACCT_ATTRIBUTES
--- Represents user's attributes 
+-- Represents user's attributes
 -- ================================================================
 
 CREATE TABLE useracct_attributes (
@@ -215,8 +215,8 @@ CREATE TABLE item (
     i_num_images       bigint,
     i_num_global_attrs bigint,
     i_num_comments     bigint,
-    i_start_date       timestamp    DEFAULT '1970-01-01 00:00:01',
-    i_end_date         timestamp    DEFAULT '1970-01-01 00:00:01',
+    i_start_date       timestamp    DEFAULT '2000-01-01 00:00:01',
+    i_end_date         timestamp    DEFAULT '2000-01-01 00:00:01',
     i_status           int          DEFAULT 0,
     i_created          timestamp    DEFAULT CURRENT_TIMESTAMP,
     i_updated          timestamp    DEFAULT CURRENT_TIMESTAMP,
